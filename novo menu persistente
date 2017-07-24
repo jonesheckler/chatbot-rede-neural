@@ -1,0 +1,73 @@
+novo menu persistente
+
+
+curl -X POST -H "Content-Type: application/json" -d '{
+  "persistent_menu":[
+    {
+      "locale":"default",
+      "composer_input_disabled":false,
+      "call_to_actions":[
+        {
+          "title":"Último Evento",
+          "type":"postback",
+          "payload":"menu_ultimo_evento"
+        },
+    	{
+          "title":"Próximo Evento",
+          "type":"postback",
+          "payload":"menu_proximo_evento"
+        },
+        {
+          "title":"Contato",
+          "type":"postback",
+          "payload":"menu_contato"
+        },
+      ]
+    },
+    {
+      "locale":"zh_CN",
+      "composer_input_disabled":false
+    }
+  ]
+}' "https://graph.facebook.com/v2.6/me/messenger_profile?access_token=EAAW9f32ZC7nMBABXcQhlzdxC7T9L9pQ7nDIKj3aDIsZCMGOAQfn7e6IlHdJp92yWCCRHNBWx9xdCKy5cL2ah7vGmgNKv42YPCgLOJgqVUA7POQNZAazBWpVf6kVBXZA19pjZAfS8LG164tusVrihQc79mWo34DaLp1c8ajhV4cwZDZD"
+
+
+
+
+
+
+
+
+
+curl -X DELETE -H "Content-Type: application/json" -d '{
+  "fields":[
+    "persistent_menu"
+  ]
+}' "https://graph.facebook.com/v2.6/me/messenger_profile?access_token=EAAW9f32ZC7nMBABXcQhlzdxC7T9L9pQ7nDIKj3aDIsZCMGOAQfn7e6IlHdJp92yWCCRHNBWx9xdCKy5cL2ah7vGmgNKv42YPCgLOJgqVUA7POQNZAazBWpVf6kVBXZA19pjZAfS8LG164tusVrihQc79mWo34DaLp1c8ajhV4cwZDZD"    
+
+
+
+
+// BOTAO COMECAR
+
+
+// CRIAR BOTAO COMECAR
+
+curl -X POST -H "Content-Type: application/json" -d '{ 
+  "get_started":{
+    "payload":"GET_STARTED_PAYLOAD"
+  }
+}' "https://graph.facebook.com/v2.6/me/messenger_profile?access_token=EAAW9f32ZC7nMBABXcQhlzdxC7T9L9pQ7nDIKj3aDIsZCMGOAQfn7e6IlHdJp92yWCCRHNBWx9xdCKy5cL2ah7vGmgNKv42YPCgLOJgqVUA7POQNZAazBWpVf6kVBXZA19pjZAfS8LG164tusVrihQc79mWo34DaLp1c8ajhV4cwZDZD"    
+
+
+
+
+// DELETAR BOTAO COMECAR
+
+
+curl -X DELETE -H "Content-Type: application/json" -d '{
+  "fields":[
+    "get_started"
+  ]
+}' "https://graph.facebook.com/v2.6/me/messenger_profile?access_token=EAAW9f32ZC7nMBABXcQhlzdxC7T9L9pQ7nDIKj3aDIsZCMGOAQfn7e6IlHdJp92yWCCRHNBWx9xdCKy5cL2ah7vGmgNKv42YPCgLOJgqVUA7POQNZAazBWpVf6kVBXZA19pjZAfS8LG164tusVrihQc79mWo34DaLp1c8ajhV4cwZDZD"    
+

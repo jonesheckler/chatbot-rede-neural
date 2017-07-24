@@ -1,0 +1,17 @@
+{
+  "name": "chat-example",
+  "version": "0.0.0",
+  "description": "A chat example to showcase how to use `socket.io` with a static `express` server with `async` for control flow.",
+  "main": "server.js",
+  "repository": "",
+  "author": "Mostafa Eweda <mo.eweda@gmail.com>",
+  "dependencies": {
+    "async": "~0.2.8",
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "fb-messenger": "^1.1.0",
+    "moment": "^2.17.1",
+    "moment-timezone": "^0.5.11",
+    "request": "^2.79.0"
+  }
+}
